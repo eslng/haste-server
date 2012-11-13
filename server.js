@@ -8,7 +8,7 @@ var connect = require('connect');
 var DocumentHandler = require('./lib/document_handler');
 
 // Load the configuration and set some defaults
-var config = JSON.parse(fs.readFileSync('./config.js', 'utf8'));
+var config = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
 config.port = process.env.PORT || config.port || 7777;
 config.host = process.env.HOST || config.host || 'localhost';
 
